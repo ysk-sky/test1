@@ -8,3 +8,6 @@ const server = app.listen(process.env.PORT, function(){
 app.get("/", (req,res,next)=>{
 	res.status(200).sendFile(__dirname + '/index.html')
 })
+app.get("/meta", (req,res,next)=>{
+	res.status(200).sendFile(__dirname + '/meta.html')
+})
